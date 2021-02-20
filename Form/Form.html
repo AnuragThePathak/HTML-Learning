@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+    <h2>Student Registration Form</h2>
+    <form  action="backend.php">
+        <div>
+            <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+        </div><br>
+        <div>
+            <label for="phone">Phone Number:</label>
+                 <input type="tel" name="phone" id="phone" pattern="[2-9]{1}[0-9]{9}" placeholder="Don't use +91 or 0" required>
+            
+        </div><br>
+        <div>
+            <label for="dob">
+                Date of Birth: <input type="date" name="dob" id="dob" required>
+            </label>
+        </div><br>
+        <div>
+            <label for="email">Email:</label>
+             <input type="email" name="email" id="email">
+        </div><br>
+        <div>
+            Gender:<input type="radio" name="gender" id="male">
+            <label for="male">Male</label>&nbsp;
+            <input type="radio" name="gender" id="female">
+                <label for="female">Female</label>
+        </div><br>
+        <div>
+            <label for="file">photo: <input type="file" name="photo" id="photo" accept=".jpg"></label>
+        </div>
+        <div><small>only jpg and jpeg format is supported</small>
+        </div>
+        <br>
+        <div>
+            <label for="payment">Payment Proof:</label>
+            <input type="file" name="payment" id="payment" accept=".pdf">
+        </div><br>
+        <div>
+            <input type="checkbox" name="confirm" required>I agree to T&C and all data are correct to my knowledge
+        </div><br>
+        <div>
+            
+        </div>
+        <button type="submit"><img src="/home/anurag/Downloads/index.jpeg" alt="Submit"></button>
+        <!-- since there's no such image alt text is shown but we can add image too -->
+        <button type="reset">Reset</button>
+
+    </form>
+</body>
+</html>
